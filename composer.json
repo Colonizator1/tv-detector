@@ -1,0 +1,22 @@
+{
+    "name": "colonizator1/tv-detector",
+    "description": "Lightweight TV user-agent detector.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TvDetector\\": ""
+        }
+    },
+    "keywords": [
+        "user-agent",
+        "device",
+        "tv",
+        "android-tv",
+        "detection"
+    ],
+    "minimum-stability": "stable"
+}
