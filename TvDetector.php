@@ -147,7 +147,7 @@ class TvDetector
         . '|REGAL[;,)]'
         . '|Saba[;,)]'
         . '|Salora(?:_cx)?[;,)]'
-        . '|Samsung'
+        . '|Samsung(?!.*Mobile)'
         . '|Maple_2011'
         . '|SCHAUB_LORENZ[;,)]'
         . '|SCHONTECH[;,)]'
