@@ -223,6 +223,7 @@ class TvDetector
         . '/i';
 
     private const ANDROID_TV_PATTERN = '/Linux; Andr0id[; ](\d+[.\d]*)|Android[; ](\d+[.\d]*).+(?:(?:Android(?: UHD)?|AT&T|Google|Smart)[ _]?TV|AOSP on r33a0|BRAVIA|wv-atv)|Windows.+Andr0id TV|.+(?:K_?Android_?TV_|AndroidTV|GoogleTV_)/i';
+    private const FIRE_OS_PATTERN = '/(?:Andr[o0]id (\d([\d.])*);? |Amazon;|smarttv_)AFT|AEO[ACBHKT]| KF[ADFGJKMORSTQ]|.+FIRETVSTICK2018/i';
 
     public static function isTV(string $userAgent): bool
     {
@@ -241,4 +242,14 @@ class TvDetector
 
         return (bool) preg_match(self::ANDROID_TV_PATTERN, $userAgent);
     }
+
+    public static function isFireOS(string $userAgent): bool
+    {
+        if ($userAgent === '') {
+            return false;
+        }
+
+        return (bool) preg_match(self::FIRE_OS_PATTERN, $userAgent);
+    }
+
 }
