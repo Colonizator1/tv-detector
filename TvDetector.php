@@ -79,7 +79,7 @@ class TvDetector
         . '|HANSEATIC[;,)]'
         . '|HI-LEVEL[;,)]'
         . '|HIGH_ONE[;,)]'
-        . '|Hisense'
+        . '|Hisense|Odin'
         . '|Eurofins_Digital_Testing'
         . '|Hitachi[;,)]'
         . '|HOFER[;,)]'
